@@ -20,34 +20,27 @@ Dockerised base template software for a new organisation, a quick way to get sta
 
 ## Install
 `su -l`
+
 `wget https://raw.githubusercontent.com/sysvar/orgHub/main/orgHub.sh && chmod +x orgHub.sh && ./orgHub.sh -h`
 
 ## Example
+Usage
 ![Example Usage](./help.png)
 
+Install
 ![Example Install](./install.png)
 
 ## Considerations
- - IMPORTANT: You will want to change default logins.  
- - Only expose the services you need exposing.
- - Elastic in current state should not be public internet facing, reduce port exposure.
+ - Change default login credentials
+ - Only expose the services you need exposing
+ - Elastic in current state should not be public internet facing, reduce port exposure
 
 ## Exposure
-|---------------------------------|
-|- Service ------------ Port -----|
-|- Dashy -------------- 80/tcp ---|
-|- Cockpit ------------ 1000/tcp -|
-|- Portainer ---------- 1001/tcp -|
-|- Uptime Kuma -------- 1002/tcp -|
-|- Pi Alert ----------- 1003/tcp -|
-|- Passbolt ----------- 1004/tcp -|
-|- Bookstack ---------- 1005/tcp -|
-|- Vikunja ------------ 1006/tcp -|
-|- Nessus ------------- 1007/tcp -|
-|- Elastic (ELK) ------ 1008/tcp -|
-|---------------------------------|
+See graphic above.
 
-**Elastic requires additional setup to swtich from 5061/tcp to 1008/tcp** - Current Elastic Ports:
+**Elastic requires additional setup to swtich from 5061/tcp to 1008/tcp**
+
+Current Elastic Ports:
  - 5044: Logstash Beats input
  - 50000: Logstash TCP input
  - 9600: Logstash monitoring API
