@@ -24,10 +24,8 @@ Dockerised base template software for a new organisation, a quick way to get sta
 `wget https://raw.githubusercontent.com/sysvar/orgHub/main/orgHub.sh && chmod +x orgHub.sh && ./orgHub.sh -h`
 
 ## Example
-Usage
 ![Example Usage](./help.png)
 
-Install
 ![Example Install](./install.png)
 
 ## Considerations
@@ -38,9 +36,7 @@ Install
 ## Exposure
 See graphic above.
 
-**Elastic requires additional setup to swtich from 5061/tcp to 1008/tcp**
-
-Current Elastic Ports:
+**Elastic requires additional setup to swtich from 5061/tcp to 1008/tcp** - Current Elastic Ports:
  - 5044: Logstash Beats input
  - 50000: Logstash TCP input
  - 9600: Logstash monitoring API
