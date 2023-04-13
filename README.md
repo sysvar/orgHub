@@ -58,3 +58,4 @@ See graphic above.
 
 ## Future Dev
  - Maybe a finsih_setup.sh for Elastic so it changes ports and stops exposing some services.
+ - Add akaunting.
